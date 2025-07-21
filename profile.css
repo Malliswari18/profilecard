@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('images/pexels-codioful-7130533.jpg'); /* Replace with your image URL or path */
+  background-size: cover;       /* Makes image cover entire screen */
+  background-position: center;  /* Keeps image centered */
+  background-repeat: no-repeat; /* Prevents repeating */
+  background-attachment: fixed; /* Makes background stay fixed on scroll */
+  font-family: 'Segoe UI', sans-serif;
+}
+body {
+  /* existing styles... */
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
+  background-size: 400% 400%;
+  animation: gradientBG 3s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.location {
+  color: #666;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.skills {
+  margin: 15px 20px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.skills span {
+  background-color: #e0f3ff;
+  color: #007acc;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  
+}
+
+.skills span:hover {
+  background-color: #cce9ff;
+  transform: scale(1.1);
+transition: transform 0.2s ease;
+
+}
+
+
+.card {
+  background: white;
+  background-color:#F6D6D6;
+  width: 320px;
+  height: 500px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+background-color: #FFD8D8;
+ transform: scale(1.2);
+  box-shadow:#113F67;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, background 0.8s ease;
+
+  
+  background: linear-gradient(135deg, #9ECAD6 0%, #FFD8D8 100%);
+  transform: scale(1.2);
+  box-shadow: 0 10px 25px #113F67;
+  transition: all 0.3s ease;
+}
+.card {
+  /* existing styles */
+  animation: slideFade 1.2s ease-out;
+}
+
+@keyframes slideFade {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+.card img {
+  width: 200px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 20px;
+  border: 4px solid #0888924c;
+  box-shadow: rgba(184, 66, 86, 0.598);
+  align-items: center;
+}
+
+
+.card h2 {
+  margin-top: 15px;
+  font-size: 24px;
+  color: #333;
+}
+
+.card p.title {
+  color: #777;
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.card p.bio {
+  font-size: 14px;
+  color: #555;
+  margin: 10px 20px;
+}
+
+.card .social {
+  margin: 15px 0;
+}
+
+.card .social a {
+  text-decoration: none;
+  color: #555;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+  background-color: none;
+}
+
+.card .social a:hover {
+  color: #1da1f2;
+}
+
+
+
+.social {
+  margin: 15px 0;
+  background-color: none;
+}
+
+.social-icon img {
+  width: 30px;
+  height: 30px;
+  margin: 0 8px;
+  filter: grayscale(100%);
+  transition: transform 0.2s ease, filter 0.2s ease;
+  background-color: none;
+}
+
+.social-icon:hover img {
+  transform: scale(1.2);
+  filter: none;
+  background-color: none;
+}
+@media screen and (max-width: 400px) {
+  .card {
+    width: 90%;
+    height: auto;
+  }
+
+  .card img {
+    width: 150px;
+    height: 150px;
+  }
+}
